@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class VRWalk : MonoBehaviour {
-    public Transform VRCam;
+   /* public Transform VRCam;
 	public float ToggleAngle = 30.0f;
 	public float speed = 3.0f;
 	public bool moveF;
@@ -27,5 +27,5 @@ public class VRWalk : MonoBehaviour {
 			cc.SimpleMove (forward * speed);
 		}
 		
-	}
+	}*/
 }

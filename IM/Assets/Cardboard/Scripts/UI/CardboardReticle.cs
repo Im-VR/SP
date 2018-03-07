@@ -27,7 +27,7 @@ public class CardboardReticle : MonoBehaviour, ICardboardPointer
     public int count;
     public Text scoreText;
 	public GameObject finish;
-
+	public Text finalText;
     public bool inRange = false;
 
     /// Growth speed multiplier for the reticle/
@@ -146,11 +146,17 @@ public class CardboardReticle : MonoBehaviour, ICardboardPointer
             }
 
 
-            if (targetObject.gameObject.CompareTag("Finish_Line"))
-            {
-                GameObject.Find("SpaceSH").SendMessage("Finnish");
-            }
+			if (targetObject.gameObject.CompareTag("Finish_Line"))        {
+				GameObject.Find("SpaceSH").SendMessage("Finnish");
 
+				finalText.gameObject.SetActive(true);
+				finalText.text = "Total "+ scoreText.text;
+
+
+			}
+
+
+		
 
 
             inRange = false;

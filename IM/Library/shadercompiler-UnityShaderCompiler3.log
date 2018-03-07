@@ -1,4 +1,4 @@
 Base path: /Applications/Unity/Unity.app/Contents
 Cmd: initializeCompiler
 Cmd: compileComputeKernel
-  api=15 insize=25455 outsize=240517 ok=1
+  api=15 insize=24619 outsize=240517 ok=1

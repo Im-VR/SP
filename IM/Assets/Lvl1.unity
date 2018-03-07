@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.45115107, g: 0.50092864, b: 0.57387364, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -1345,7 +1345,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &199026354
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2658,10 +2658,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b967f64825f14835a865d7a4b942d0a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  VRCam: {fileID: 0}
-  ToggleAngle: 30
-  speed: 3
-  moveF: 1
 --- !u!4 &400577982 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4000010918346648, guid: b078b3ff50315456483b36b78e4d2eef,
@@ -3524,7 +3520,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -7612,7 +7608,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1223376167
 RectTransform:
   m_ObjectHideFlags: 0
@@ -10202,6 +10198,10 @@ Prefab:
       propertyPath: finish
       value: 
       objectReference: {fileID: 1123117617}
+    - target: {fileID: 11446276, guid: 60270cf52a5e94998a5a335989159738, type: 2}
+      propertyPath: finalText
+      value: 
+      objectReference: {fileID: 199026355}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 60270cf52a5e94998a5a335989159738, type: 2}
   m_IsPrefabParent: 0
@@ -10735,7 +10735,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1550729431}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.015, y: -0.0039, z: 0.4455}
+  m_LocalPosition: {x: -0.0033, y: -0.0039, z: -0.355}
   m_LocalScale: {x: 0.00199, y: 0.00199, z: 0.00199}
   m_Children: []
   m_Father: {fileID: 1225133870}
@@ -13972,7 +13972,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 2
-  randomSeed: 1962561753
+  randomSeed: 647141021
   InitialModule:
     serializedVersion: 3
     enabled: 1
